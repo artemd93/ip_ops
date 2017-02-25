@@ -9,7 +9,7 @@ mask = sys.argv[2]
 addr_regex = re.compile("([0-9]{1,3}\.?){4}")
 if not addr_regex.match(address) or not addr_regex.match(mask):
     print("Inappropriate input found. Exiting...")
-    exit(30)
+    exit(40)
 
 
 def convert_oct_b256(dec_oct, it_num=3, converted=None):
